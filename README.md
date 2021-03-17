@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setting up your local environment
+In order to run this webapp you will also need to run homesimple-server 
+at the same time. To support this, the code was configured to use environment 
+variables so that the server endpoint can be set. Make sure to set
+`REACT_APP_SERVER=localhost:80` before running this app. You can configure port
+80 to the port that you are running the server on.
+
 ## Available Scripts
 
 In the project directory, you can run:
