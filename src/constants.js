@@ -1,0 +1,1 @@
+export const SERVER = process.env.REACT_APP_SERVER || 'http://44.233.241.182'
