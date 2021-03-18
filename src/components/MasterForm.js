@@ -128,7 +128,7 @@ class MasterForm extends React.Component {
           <Button
           variant="contained" size="large" color="primary"  
             className="btn btn-primary float-right" 
-            type="button" href="/search">
+            type="button" href='/hs-prebuying/search'>
           Continue to search process
           </Button>        
         )
@@ -357,8 +357,6 @@ class MasterForm extends React.Component {
       <div className="form-group">
       <h1 className="form-title">Have you been pre-approved for a mortgage?</h1>
         <p>If you’re futher in the home buying process, you may have already been pre-approved for a mortgage by your bank.</p>
-        <Button>No I haven't</Button>
-        <Button>Yes I have</Button>
       </div>
       
       </React.Fragment>
