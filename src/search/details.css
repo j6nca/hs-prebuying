@@ -1,0 +1,34 @@
+.center-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-wrapper {
+    display: grid;
+    grid-auto-row: auto;
+    grid-template-columns: minmax(100%, 800px);
+    justify-items: left;
+}
+
+.main-heading {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-heading {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.description-text {
+    text-align: left;
+}
+
+.listing-photo {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+}
