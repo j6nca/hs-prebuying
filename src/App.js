@@ -8,17 +8,21 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+import {DetailsPage} from "./search/detailsPage";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <NavBar></NavBar>
         <Switch>
           <Route path='/search'>
             <SearchPage />
           </Route>
+          <Route path='/page/:mlsNumber'>
+            <DetailsPage />
+          </Route>
           <Route path='/'>
-            <NavBar></NavBar>
             <MasterForm></MasterForm>
           </Route>
         </Switch>

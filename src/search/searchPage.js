@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {SERVER} from "../constants";
 import './search.css'
+import {Link} from "react-router-dom";
 
 export function SearchPage() {
 
@@ -33,10 +34,10 @@ function Listing(props) {
   const [listing, setListing] = useState(props.data)
 
   return (
-    <div onClick={() => alert('click')}>
+    <Link to={ '/page/' + listing.MlsNumber }>
       <img className='listing-photo' src={ listing.LowResPhoto }/>
       <div>{ listing.Price }</div>
       <div>{ listing.Address }</div>
-    </div>
+    </Link>
   )
 }
