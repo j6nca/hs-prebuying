@@ -1,6 +1,6 @@
 {
   "name": "hs-prebuying",
-  "homepage": "http://jngbot.github.io/hs-prebuying",
+  "homepage": "http://jngbot.github.io/hs-prebuying/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

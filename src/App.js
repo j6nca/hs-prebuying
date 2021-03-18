@@ -5,16 +5,14 @@ import { SearchPage } from './search/searchPage'
 import NavBar from './components/NavBar'
 import {
   Switch,
-  BrowserRouter as Router,
-  HashRouter,
+  HashRouter as Router,
   Route
 } from 'react-router-dom'
 import {DetailsPage} from "./search/detailsPage";
 
 function App() {
-  console.log(process.env.PUBLIC_URL)
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <NavBar></NavBar>
         <Switch>
