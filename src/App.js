@@ -3,7 +3,6 @@ import './App.css';
 import MasterForm from './components/MasterForm'
 import { SearchPage } from './search/searchPage'
 import NavBar from './components/NavBar'
-import Landing from './components/Landing'
 import {
   Switch,
   BrowserRouter as Router,

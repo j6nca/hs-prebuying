@@ -75,6 +75,7 @@
   text-align: left;
 }
 p{
+  padding-top:30px;
   line-height: 25px;
 }
 
@@ -95,8 +96,8 @@ li{
   
 }
 #back{
-  margin-right: 25%;
+  float: left;
 }
 #front{
-  margin-left: 25%;
+  float: right;
 }
