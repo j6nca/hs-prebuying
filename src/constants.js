@@ -1,1 +1,1 @@
-export const SERVER = process.env.REACT_APP_SERVER || 'https://thingproxy.freeboard.io/fetch/http://44.233.241.182'
+export const SERVER = process.env.REACT_APP_SERVER || 'https://serene-ridge-53657.herokuapp.com/http://44.233.241.182'
