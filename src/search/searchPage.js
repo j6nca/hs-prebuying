@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {SERVER} from "../constants";
 import './search.css'
 import {Link} from "react-router-dom";
+import {Button} from "@material-ui/core";
 
 export function SearchPage() {
 
@@ -20,7 +21,7 @@ export function SearchPage() {
     <div className='center-page'>
       <div className='search-wrapper'>
         <h1>Search Results: </h1>
-        <h3>89 Homes we think you'll love in Waterloo, Ontario</h3>
+        <div className='sub-title'>89 Homes we think you'll love in Waterloo, Ontario</div>
         <div className='listing-container'>
           { listings?.map(l => <Listing data={l}/>)}
         </div>
@@ -34,10 +35,16 @@ function Listing(props) {
   const [listing, setListing] = useState(props.data)
 
   return (
-    <Link to={ '/page/' + listing.MlsNumber }>
+    <Link className='listing-wrapper' to={ '/page/' + listing.MlsNumber }>
       <img className='listing-photo' src={ listing.LowResPhoto }/>
-      <div>{ listing.Price }</div>
-      <div>{ listing.Address }</div>
+      <div className='description-wrapper'>
+        <div>
+          <h2>{ listing.Price }</h2>
+          <p>{ listing.Address }</p>
+        </div>
+        <Button className='like-button' variant='outlined' disableElevation color='primary'>Like</Button>
+      </div>
+
     </Link>
   )
 }

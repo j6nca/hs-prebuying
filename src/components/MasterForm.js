@@ -128,7 +128,7 @@ class MasterForm extends React.Component {
           <Button
           variant="contained" size="large" color="primary"  
             className="btn btn-primary float-right" 
-            type="button" href='/hs-prebuying/search'>
+            type="button" href='/hs-prebuying/#/search'>
           Continue to search process
           </Button>        
         )
