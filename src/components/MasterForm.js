@@ -266,6 +266,12 @@ class MasterForm extends React.Component {
       <div className="form-group">
         <h1>We respect your data and privacy</h1>
         <p>We realize that to make accurate recommendations, this requires the input of personal user data. The data we collect will solely be used for generating tailored home recommendations and will not be sold. </p>
+        <p>Please read our <a>Terms of Use</a>, <a>Privacy Policy</a>, and <a>Data Processing Agreement</a>.</p>
+        <Checkbox
+        defaultChecked
+        color="primary"
+        inputProps={{ 'aria-label': 'secondary checkbox' }}
+      /> By selecting this, I agree to the Terms of Use, Privacy Policy, and Data Processing Agreement.
       </div>
     );
   }
