@@ -7,7 +7,7 @@
 .details-wrapper {
     display: grid;
     grid-auto-row: auto;
-    grid-template-columns: minmax(100%, 800px);
+    grid-template-columns: minmax(100%, 1400px);
     justify-items: left;
 }
 
@@ -26,7 +26,7 @@
     text-align: left;
 }
 
-.listing-photo {
+.carousel-photo {
     border-radius: 10px;
     object-fit: cover;
     width: 600px;

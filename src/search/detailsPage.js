@@ -3,8 +3,6 @@ import {SERVER} from "../constants";
 import {useParams} from "react-router-dom";
 import './details.css'
 
-const REALTOR_URL = 'https://api37.realtor.ca//Listing.svc/PropertyDetails?PropertyId='
-
 export function DetailsPage(props) {
 
   const { mlsNumber } = useParams()
@@ -23,7 +21,7 @@ export function DetailsPage(props) {
       <div className='details-wrapper'>
         <h2 className='main-heading'>{ details.Address }</h2>
         <p>MLS Number: { details.MlsNumber }</p>
-        <img className='listing-photo' src={details.LowResPhoto}/>
+        <img className='carousel-photo' src={details.LowResPhoto}/>
         <h3 className='sub-heading'>Features</h3>
         <p className='description-text'>
           Addess: { details.Address }<br/>
