@@ -16,7 +16,7 @@ export function SearchPage() {
       }).then(listings => {
         setListings(listings)
     })
-  })
+  }, [])
 
   return (
     <div className='center-page'>

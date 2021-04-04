@@ -14,7 +14,7 @@ export function DetailsPage(props) {
     fetch(SERVER + '/page/' + mlsNumber)
       .then(res => res.json())
       .then(details => setDetails(details))
-  })
+  }, [])
 
   return (
     <div className='center-page'>
