@@ -36,7 +36,7 @@ function Listing(props) {
   const [listing, setListing] = useState(props.data)
 
   return (
-    <Link className='listing-wrapper' to={ '/page/external/' + listing.MlsNumber }>
+    <Link className='listing-wrapper' to={ '/page/' + listing.MlsNumber }>
       <img className='listing-photo' src={ listing.LowResPhoto }/>
       <div className='description-wrapper'>
         <div>

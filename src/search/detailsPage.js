@@ -11,7 +11,7 @@ export function DetailsPage(props) {
   console.log(mlsNumber)
 
   useEffect(() => {
-    fetch(SERVER + '/page/' + mlsNumber)
+    fetch(SERVER + '/page/external/' + mlsNumber)
       .then(res => res.json())
       .then(details => setDetails(details))
   }, [])
