@@ -9,8 +9,9 @@ export function SearchPage() {
   const [listings, setListings] = useState([])
 
   useEffect(() => {
-    fetch(SERVER + '/search')
+    fetch(SERVER + '/list')
       .then(res => {
+        console.log(res)
         return res.json()
       }).then(listings => {
         setListings(listings)
@@ -35,7 +36,7 @@ function Listing(props) {
   const [listing, setListing] = useState(props.data)
 
   return (
-    <Link className='listing-wrapper' to={ '/page/' + listing.MlsNumber }>
+    <Link className='listing-wrapper' to={ '/page/external/' + listing.MlsNumber }>
       <img className='listing-photo' src={ listing.LowResPhoto }/>
       <div className='description-wrapper'>
         <div>
